@@ -1,0 +1,1333 @@
+#include<iostream>
+using namespace std;
+void Day_Select()
+{
+    cout<<"Please enter the day"<<endl;
+}
+void Monday()
+{
+    int Nihari = 150;
+    int Roti = 20;
+    int Pastries = 40;
+    int b;
+    int d = 0;
+    char c;
+    string bill;
+    float f;
+    q:
+    cout<<"Menu of Monday"<<endl;
+    cout<<"Nihari: "<<Nihari<<" Rs"<<endl;
+    cout<<"Roti: "<<Roti<<" Rs"<<endl;
+    cout<<"Pastries: "<<Pastries<<" Rs"<<endl;
+    cout<<"Press 1 to buy 1st thing"<<endl;
+    cout<<"Press 2 to buy 2nd thing"<<endl;
+    cout<<"Press 3 to buy 3rd thing"<<endl;
+    cout<<"Press 4 to remove 1st thing"<<endl;
+    cout<<"Press 5 to remove 2nd thing"<<endl;
+    cout<<"Press 6 to remove 3rd thing"<<endl;
+    cin>>b;
+    if(b==1)
+    {
+        cout<<"Nihari = "<<Nihari<<" Rs added to bill"<<endl;
+        d=d+Nihari;
+        cout<<"Do you want to add or subtract any other thing ? Press y or n"<<endl;
+        cin>>c;
+        if(c=='y')
+        {
+            goto q;
+        }
+        else if(c=='n')
+        {
+            cout<<"Type BILL if you want to see bill"<<endl;
+            cin>>bill;
+            if(bill=="BILL")
+            {
+                if(d<0)
+                {
+                    cout<<"Your current bill is: "<<0<<endl;
+                }
+                else
+                {
+                    cout<<"Your Items bill is: "<<d<<endl;
+                    f = (d*4)/100;
+                    cout<<"4 percent GST: "<<f<<endl;
+                    cout<<"Total BILL including GST: "<<d+f;
+                }
+            }
+            else
+            {
+                cout<<"Wrong command for BILL"<<endl;
+            }
+            
+        }
+        else
+        {
+            cout<<"Wrong input !"<<endl;
+        }
+    }
+    else if(b==2)
+    {
+        cout<<"Roti = "<<Roti<<" Rs added to bill"<<endl;
+        d=d+Roti;
+        cout<<"Do you want to add or subtract any other thing ? Press y or n"<<endl;
+        cin>>c;
+        if(c=='y')
+        {
+            goto q;
+        }
+        else if(c=='n')
+        {
+            cout<<"Type BILL if you want to see bill"<<endl;
+            cin>>bill;
+            if(bill=="BILL")
+            {
+                if(d<0)
+                {
+                    cout<<"Your current bill is: "<<0<<endl;
+                }
+                else
+                {
+                    cout<<"Your Items bill is: "<<d<<endl;
+                    f = (d*4)/100;
+                    cout<<"4 percent GST: "<<f<<endl;
+                    cout<<"Total BILL including GST: "<<d+f;
+                }
+            }
+            else
+            {
+                cout<<"Wrong command for BILL"<<endl;
+            }
+            
+        }
+        else
+        {
+            cout<<"Wrong input !"<<endl;
+        }
+    }
+    else if(b==3)
+    {
+        cout<<"Pastries = "<<Pastries<<" Rs added to bill"<<endl;
+        d=d+Pastries;
+        cout<<"Do you want to add or subtract any other thing ? Press y or n"<<endl;
+        cin>>c;
+        if(c=='y')
+        {
+            goto q;
+        }
+        else if(c=='n')
+        {
+            cout<<"Type BILL if you want to see bill"<<endl;
+            cin>>bill;
+            if(bill=="BILL")
+            {
+                if(d<0)
+                {
+                    cout<<"Your current bill is: "<<0<<endl;
+                }
+                else
+                {
+                    cout<<"Your Items bill is: "<<d<<endl;
+                    f = (d*4)/100;
+                    cout<<"4 percent GST: "<<f<<endl;
+                    cout<<"Total BILL including GST: "<<d+f;
+                }
+            }
+            else
+            {
+                cout<<"Wrong command for BILL"<<endl;
+            }
+            
+        }
+    }
+        else if(b==4)
+        {
+        cout<<"Nihari = "<<Nihari<<" Rs Subtracted from bill"<<endl;
+        d=d-Nihari;
+        cout<<"Do you want to add or subtract any other thing ? Press y or n"<<endl;
+        cin>>c;
+        if(c=='y')
+        {
+            goto q;
+        }
+        else if(c=='n')
+        {
+            cout<<"Type BILL if you want to see bill"<<endl;
+            cin>>bill;
+            if(bill=="BILL")
+            {
+                if(d<0)
+                {
+                    cout<<"Your current bill is: "<<0<<endl;
+                }
+                else
+                {
+                    cout<<"Your Items bill is: "<<d<<endl;
+                    f = (d*4)/100;
+                    cout<<"4 percent GST: "<<f<<endl;
+                    cout<<"Total BILL including GST: "<<d+f;
+                }
+            }
+            else
+            {
+                cout<<"Wrong command for BILL"<<endl;
+            }
+            
+        }
+        else
+        {
+            cout<<"Wrong input !"<<endl;
+        }
+        }
+    else if(b==5)
+    {
+        cout<<"Roti = "<<Roti<<" Rs Subtracted from bill"<<endl;
+        d=d-Roti;
+        cout<<"Do you want to add or subtract any other thing ? Press y or n"<<endl;
+        cin>>c;
+        if(c=='y')
+        {
+            goto q;
+        }
+        else if(c=='n')
+        {
+            cout<<"Type BILL if you want to see bill"<<endl;
+            cin>>bill;
+            if(bill=="BILL")
+            {
+                if(d<0)
+                {
+                    cout<<"Your current bill is: "<<0<<endl;
+                }
+                else
+                {
+                    cout<<"Your Items bill is: "<<d<<endl;
+                    f = (d*4)/100;
+                    cout<<"4 percent GST: "<<f<<endl;
+                    cout<<"Total BILL including GST: "<<d+f;
+                }
+            }
+            else
+            {
+                cout<<"Wrong command for BILL"<<endl;
+            }
+            
+        }
+        else
+        {
+            cout<<"Wrong input !"<<endl;
+        }
+    }
+    else if(b==6)
+    {
+        cout<<"Pastries = "<<Pastries<<" Rs subtracted from bill"<<endl;
+        d=d-Pastries;
+        cout<<"Do you want to add or subtract any other thing ? Press y or n"<<endl;
+        cin>>c;
+        if(c=='y')
+        {
+            goto q;
+        }
+        else if(c=='n')
+        {
+            cout<<"Type BILL if you want to see bill"<<endl;
+            cin>>bill;
+            if(bill=="BILL")
+            {
+                if(d<0)
+                {
+                    cout<<"Your current bill is: "<<0<<endl;
+                }
+                else
+                {
+                    cout<<"Your Items bill is: "<<d<<endl;
+                    f = (d*4)/100;
+                    cout<<"4 percent GST: "<<f<<endl;
+                    cout<<"Total BILL including GST: "<<d+f;
+                }
+            }
+            else
+            {
+                cout<<"Wrong command for BILL"<<endl;
+            }
+            
+        }
+    }
+    else
+    {
+        cout<<"Wrong input"<<endl;
+    }
+}
+void Tuesday()
+{
+    int Daal_Chawal = 100;
+    int Drink = 40;
+    int Kheer = 80;
+    int b;
+    int d = 0;
+    char c;
+    string bill;
+    float f;
+    r:
+    cout<<"Menu of Tuesday"<<endl;
+    cout<<"Daal_Chawal: "<<Daal_Chawal<<" Rs"<<endl;
+    cout<<"Drink: "<<Drink<<" Rs"<<endl;
+    cout<<"Kheer: "<<Kheer<<" Rs"<<endl;
+    cout<<"Press 1 to buy 1st thing"<<endl;
+    cout<<"Press 2 to buy 2nd thing"<<endl;
+    cout<<"Press 3 to buy 3rd thing"<<endl;
+    cout<<"Press 4 to remove 1st thing"<<endl;
+    cout<<"Press 5 to remove 2nd thing"<<endl;
+    cout<<"Press 6 to remove 3rd thing"<<endl;
+    cin>>b;
+    cin>>b;
+    if(b==1)
+    {
+        cout<<"Daal_Chawal = "<<Daal_Chawal<<" Rs added to bill"<<endl;
+        d=d+Daal_Chawal;
+        cout<<"Do you want to add any other thing ? Press y or n"<<endl;
+        cin>>c;
+        if(c=='y')
+        {
+            goto r;
+        }
+        else if(c=='n')
+        {
+            cout<<"Type BILL if you want to see bill"<<endl;
+            cin>>bill;
+            if(bill=="BILL")
+            {
+                if(d<0)
+                {
+                    cout<<"Your current bill is: "<<0<<endl;
+                }
+                else
+                {
+                    cout<<"Your Items bill is: "<<d<<endl;
+                    f = (d*4)/100;
+                    cout<<"4 percent GST: "<<f<<endl;
+                    cout<<"Total BILL including GST: "<<d+f;
+                }
+            }
+            else
+            {
+                cout<<"Wrong command for BILL"<<endl;
+            }
+        }
+        else
+        {
+            cout<<"Wrong input !"<<endl;
+        }
+    }
+    else if(b==2)
+    {
+        cout<<"Drink = "<<Drink<<" Rs added to bill"<<endl;
+        d=d+Drink;
+        cout<<"Do you want to add any other thing ? Press y or n"<<endl;
+        cin>>c;
+        if(c=='y')
+        {
+            goto r;
+        }
+        else if(c=='n')
+        {
+            cout<<"Type BILL if you want to see bill"<<endl;
+            cin>>bill;
+            if(bill=="BILL")
+            {
+                if(d<0)
+                {
+                    cout<<"Your current bill is: "<<0<<endl;
+                }
+                else
+                {
+                    cout<<"Your Items bill is: "<<d<<endl;
+                    f = (d*4)/100;
+                    cout<<"4 percent GST: "<<f<<endl;
+                    cout<<"Total BILL including GST: "<<d+f;
+                }
+            }
+            else
+            {
+                cout<<"Wrong command for BILL"<<endl;
+            }
+        }
+        else
+        {
+            cout<<"Wrong input !"<<endl;
+        }
+    }
+    else if(b==3)
+    {
+        cout<<"Kheer = "<<Kheer<<" Rs added to bill"<<endl;
+        d=d+Kheer;
+        cout<<"Do you want to add any other thing ? Press y or n"<<endl;
+        cin>>c;
+        if(c=='y')
+        {
+            goto r;
+        }
+        else if(c=='n')
+        {
+            cout<<"Type BILL if you want to see bill"<<endl;
+            cin>>bill;
+            if(bill=="BILL")
+            {
+                if(d<0)
+                {
+                    cout<<"Your current bill is: "<<0<<endl;
+                }
+                else
+                {
+                    cout<<"Your Items bill is: "<<d<<endl;
+                    f = (d*4)/100;
+                    cout<<"4 percent GST: "<<f<<endl;
+                    cout<<"Total BILL including GST: "<<d+f;
+                }
+            }
+            else
+            {
+                cout<<"Wrong command for BILL"<<endl;
+            }
+            
+        }
+        else
+        {
+            cout<<"Wrong input !"<<endl;
+        }
+    }
+    else if(b==4)
+    {
+        cout<<"Daal_Chawal = "<<Daal_Chawal<<" Rs subtracted from bill"<<endl;
+        d=d-Daal_Chawal;
+        cout<<"Do you want to add any other thing ? Press y or n"<<endl;
+        cin>>c;
+        if(c=='y')
+        {
+            goto r;
+        }
+        else if(c=='n')
+        {
+            cout<<"Type BILL if you want to see bill"<<endl;
+            cin>>bill;
+            if(bill=="BILL")
+            {
+                if(d<0)
+                {
+                    cout<<"Your current bill is: "<<0<<endl;
+                }
+                else
+                {
+                    cout<<"Your Items bill is: "<<d<<endl;
+                    f = (d*4)/100;
+                    cout<<"4 percent GST: "<<f<<endl;
+                    cout<<"Total BILL including GST: "<<d+f;
+                }
+            }
+            else
+            {
+                cout<<"Wrong command for BILL"<<endl;
+            }
+        }
+        else
+        {
+            cout<<"Wrong input !"<<endl;
+        }
+    }
+    else if(b==5)
+    {
+        cout<<"Drink = "<<Drink<<" Rs subtracted from bill"<<endl;
+        d=d-Drink;
+        cout<<"Do you want to add any other thing ? Press y or n"<<endl;
+        cin>>c;
+        if(c=='y')
+        {
+            goto r;
+        }
+        else if(c=='n')
+        {
+            cout<<"Type BILL if you want to see bill"<<endl;
+            cin>>bill;
+            if(bill=="BILL")
+            {
+                if(d<0)
+                {
+                    cout<<"Your current bill is: "<<0<<endl;
+                }
+                else
+                {
+                    cout<<"Your Items bill is: "<<d<<endl;
+                    f = (d*4)/100;
+                    cout<<"4 percent GST: "<<f<<endl;
+                    cout<<"Total BILL including GST: "<<d+f;
+                }
+            }
+            else
+            {
+                cout<<"Wrong command for BILL"<<endl;
+            }
+        }
+        else
+        {
+            cout<<"Wrong input !"<<endl;
+        }
+    }
+    else if(b==6)
+    {
+        cout<<"Kheer = "<<Kheer<<" Rs subtracted from bill"<<endl;
+        d=d-Kheer;
+        cout<<"Do you want to add any other thing ? Press y or n"<<endl;
+        cin>>c;
+        if(c=='y')
+        {
+            goto r;
+        }
+        else if(c=='n')
+        {
+            cout<<"Type BILL if you want to see bill"<<endl;
+            cin>>bill;
+            if(bill=="BILL")
+            {
+               if(d<0)
+                {
+                    cout<<"Your current bill is: "<<0<<endl;
+                }
+                else
+                {
+                    cout<<"Your Items bill is: "<<d<<endl;
+                    f = (d*4)/100;
+                    cout<<"4 percent GST: "<<f<<endl;
+                    cout<<"Total BILL including GST: "<<d+f;
+                }
+            }
+            else
+            {
+                cout<<"Wrong command for BILL"<<endl;
+            }
+            
+        }
+        else
+        {
+            cout<<"Wrong input !"<<endl;
+        }
+    }
+    else
+    {
+        cout<<"Wrong input"<<endl;
+    }
+}
+void Wednesday()
+{
+    int Pulao = 150;
+    int Kabab = 30;
+    int Custurd = 70;
+    int b;
+    int d = 0;
+    char c;
+    string bill;
+    float f;
+    s:
+    cout<<"Menu of Wednesday"<<endl;
+    cout<<"Pulao: "<<Pulao<<" Rs"<<endl;
+    cout<<"Kabab: "<<Kabab<<" Rs"<<endl;
+    cout<<"Custurd: "<<Custurd<<" Rs"<<endl;
+    cout<<"Press 1 to buy 1st thing"<<endl;
+    cout<<"Press 2 to buy 2nd thing"<<endl;
+    cout<<"Press 3 to buy 3rd thing"<<endl;
+    cout<<"Press 4 to remove 1st thing"<<endl;
+    cout<<"Press 5 to remove 2nd thing"<<endl;
+    cout<<"Press 6 to remove 3rd thing"<<endl;
+    cin>>b;
+    cin>>b;
+    if(b==1)
+    {
+        cout<<"Pulao = "<<Pulao<<" Rs added to bill"<<endl;
+        d=d+Pulao;
+        cout<<"Do you want to add any other thing ? Press y or n"<<endl;
+        cin>>c;
+        if(c=='y')
+        {
+            goto s;
+        }
+        else if(c=='n')
+        {
+            cout<<"Type BILL if you want to see bill"<<endl;
+            cin>>bill;
+            if(bill=="BILL")
+            {
+                if(d<0)
+                {
+                    cout<<"Your current bill is: "<<0<<endl;
+                }
+                else
+                {
+                    cout<<"Your Items bill is: "<<d<<endl;
+                    f = (d*4)/100;
+                    cout<<"4 percent GST: "<<f<<endl;
+                    cout<<"Total BILL including GST: "<<d+f;
+                }
+            }
+            else
+            {
+                cout<<"Wrong command for BILL"<<endl;
+            }
+            
+        }
+        else
+        {
+            cout<<"Wrong input !"<<endl;
+        }
+    }
+    else if(b==2)
+    {
+        cout<<"Kabab = "<<Kabab<<" Rs added to bill"<<endl;
+        d=d+Kabab;
+        cout<<"Do you want to add any other thing ? Press y or n"<<endl;
+        cin>>c;
+        if(c=='y')
+        {
+            goto s;
+        }
+        else if(c=='n')
+        {
+            cout<<"Type BILL if you want to see bill"<<endl;
+            cin>>bill;
+            if(bill=="BILL")
+            {
+                if(d<0)
+                {
+                    cout<<"Your current bill is: "<<0<<endl;
+                }
+                else
+                {
+                    cout<<"Your Items bill is: "<<d<<endl;
+                    f = (d*4)/100;
+                    cout<<"4 percent GST: "<<f<<endl;
+                    cout<<"Total BILL including GST: "<<d+f;
+                }
+            }
+            else
+            {
+                cout<<"Wrong command for BILL"<<endl;
+            }
+            
+        }
+        else
+        {
+            cout<<"Wrong input !"<<endl;
+        }
+    }
+    else if(b==3)
+    {
+        cout<<"Custurd = "<<Custurd<<" Rs added to bill"<<endl;
+        d=d+Custurd;
+        cout<<"Do you want to add any other thing ? Press y or n"<<endl;
+        cin>>c;
+        if(c=='y')
+        {
+            goto s;
+        }
+        else if(c=='n')
+        {
+            cout<<"Type BILL if you want to see bill"<<endl;
+            cin>>bill;
+            if(bill=="BILL")
+            {
+                if(d<0)
+                {
+                    cout<<"Your current bill is: "<<0<<endl;
+                }
+                else
+                {
+                    cout<<"Your Items bill is: "<<d<<endl;
+                    f = (d*4)/100;
+                    cout<<"4 percent GST: "<<f<<endl;
+                    cout<<"Total BILL including GST: "<<d+f;
+                }
+            }
+            else
+            {
+                cout<<"Wrong command for BILL"<<endl;
+            }
+            
+        }
+        else
+        {
+            cout<<"Wrong input !"<<endl;
+        }
+    }
+    else if(b==4)
+    {
+        cout<<"Pulao = "<<Pulao<<" Rs subtracted from bill"<<endl;
+        d=d-Pulao;
+        cout<<"Do you want to add any other thing ? Press y or n"<<endl;
+        cin>>c;
+        if(c=='y')
+        {
+            goto s;
+        }
+        else if(c=='n')
+        {
+            cout<<"Type BILL if you want to see bill"<<endl;
+            cin>>bill;
+            if(bill=="BILL")
+            {
+                if(d<0)
+                {
+                    cout<<"Your current bill is: "<<0<<endl;
+                }
+                else
+                {
+                    cout<<"Your Items bill is: "<<d<<endl;
+                    f = (d*4)/100;
+                    cout<<"4 percent GST: "<<f<<endl;
+                    cout<<"Total BILL including GST: "<<d+f;
+                }
+            }
+            else
+            {
+                cout<<"Wrong command for BILL"<<endl;
+            }
+            
+        }
+        else
+        {
+            cout<<"Wrong input !"<<endl;
+        }
+    }
+    else if(b==5)
+    {
+        cout<<"Kabab = "<<Kabab<<" Rs subtracted from bill"<<endl;
+        d=d-Kabab;
+        cout<<"Do you want to add any other thing ? Press y or n"<<endl;
+        cin>>c;
+        if(c=='y')
+        {
+            goto s;
+        }
+        else if(c=='n')
+        {
+            cout<<"Type BILL if you want to see bill"<<endl;
+            cin>>bill;
+            if(bill=="BILL")
+            {
+                if(d<0)
+                {
+                    cout<<"Your current bill is: "<<0<<endl;
+                }
+                else
+                {
+                    cout<<"Your Items bill is: "<<d<<endl;
+                    f = (d*4)/100;
+                    cout<<"4 percent GST: "<<f<<endl;
+                    cout<<"Total BILL including GST: "<<d+f;
+                }
+            }
+            else
+            {
+                cout<<"Wrong command for BILL"<<endl;
+            }
+            
+        }
+        else
+        {
+            cout<<"Wrong input !"<<endl;
+        }
+    }
+    else if(b==6)
+    {
+        cout<<"Custurd = "<<Custurd<<" Rs subtracted from bill"<<endl;
+        d=d-Custurd;
+        cout<<"Do you want to add any other thing ? Press y or n"<<endl;
+        cin>>c;
+        if(c=='y')
+        {
+            goto s;
+        }
+        else if(c=='n')
+        {
+            cout<<"Type BILL if you want to see bill"<<endl;
+            cin>>bill;
+            if(bill=="BILL")
+            {
+                if(d<0)
+                {
+                    cout<<"Your current bill is: "<<0<<endl;
+                }
+                else
+                {
+                    cout<<"Your Items bill is: "<<d<<endl;
+                    f = (d*4)/100;
+                    cout<<"4 percent GST: "<<f<<endl;
+                    cout<<"Total BILL including GST: "<<d+f;
+                }
+            }
+            else
+            {
+                cout<<"Wrong command for BILL"<<endl;
+            }
+            
+        }
+        else
+        {
+            cout<<"Wrong input !"<<endl;
+        }
+    }
+    else
+    {
+        cout<<"Wrong input"<<endl;
+    }
+}
+void Thursday()
+{
+    int Achar_Gosht = 180;
+    int Roti = 20;
+    int Drink = 40;
+    int b;
+    int d = 0;
+    char c;
+    string bill;
+    float f;
+    t:
+    cout<<"Menu of Thursday"<<endl;
+    cout<<"Achar_Gosht: "<<Achar_Gosht<<" Rs"<<endl;
+    cout<<"Roti: "<<Roti<<" Rs"<<endl;
+    cout<<"Drink: "<<Drink<<" Rs"<<endl;
+    cout<<"Press 1 to buy 1st thing"<<endl;
+    cout<<"Press 2 to buy 2nd thing"<<endl;
+    cout<<"Press 3 to buy 3rd thing"<<endl;
+    cout<<"Press 4 to remove 1st thing"<<endl;
+    cout<<"Press 5 to remove 2nd thing"<<endl;
+    cout<<"Press 6 to remove 3rd thing"<<endl;
+    cin>>b;
+    cin>>b;
+    if(b==1)
+    {
+        cout<<"Achar_Gosht = "<<Achar_Gosht<<" Rs added to bill"<<endl;
+        d=d+Achar_Gosht;
+        cout<<"Do you want to add any other thing ? Press y or n"<<endl;
+        cin>>c;
+        if(c=='y')
+        {
+            goto t;
+        }
+        else if(c=='n')
+        {
+            cout<<"Type BILL if you want to see bill"<<endl;
+            cin>>bill;
+            if(bill=="BILL")
+            {
+                if(d<0)
+                {
+                    cout<<"Your current bill is: "<<0<<endl;
+                }
+                else
+                {
+                    cout<<"Your Items bill is: "<<d<<endl;
+                    f = (d*4)/100;
+                    cout<<"4 percent GST: "<<f<<endl;
+                    cout<<"Total BILL including GST: "<<d+f;
+                }
+            }
+            else
+            {
+                cout<<"Wrong command for BILL"<<endl;
+            }
+            
+        }
+        else
+        {
+            cout<<"Wrong input !"<<endl;
+        }
+    }
+    else if(b==2)
+    {
+        cout<<"Roti = "<<Roti<<" Rs added to bill"<<endl;
+        d=d+Roti;
+        cout<<"Do you want to add any other thing ? Press y or n"<<endl;
+        cin>>c;
+        if(c=='y')
+        {
+            goto t;
+        }
+        else if(c=='n')
+        {
+            cout<<"Type BILL if you want to see bill"<<endl;
+            cin>>bill;
+            if(bill=="BILL")
+            {
+                if(d<0)
+                {
+                    cout<<"Your current bill is: "<<0<<endl;
+                }
+                else
+                {
+                    cout<<"Your Items bill is: "<<d<<endl;
+                    f = (d*4)/100;
+                    cout<<"4 percent GST: "<<f<<endl;
+                    cout<<"Total BILL including GST: "<<d+f;
+                }
+            }
+            else
+            {
+                cout<<"Wrong command for BILL"<<endl;
+            }
+            
+        }
+        else
+        {
+            cout<<"Wrong input !"<<endl;
+        }
+    }
+    else if(b==3)
+    {
+        cout<<"Drink = "<<Drink<<" Rs added to bill"<<endl;
+        d=d+Drink;
+        cout<<"Do you want to add any other thing ? Press y or n"<<endl;
+        cin>>c;
+        if(c=='y')
+        {
+            goto t;
+        }
+        else if(c=='n')
+        {
+            cout<<"Type BILL if you want to see bill"<<endl;
+            cin>>bill;
+            if(bill=="BILL")
+            {
+                if(d<0)
+                {
+                    cout<<"Your current bill is: "<<0<<endl;
+                }
+                else
+                {
+                    cout<<"Your Items bill is: "<<d<<endl;
+                    f = (d*4)/100;
+                    cout<<"4 percent GST: "<<f<<endl;
+                    cout<<"Total BILL including GST: "<<d+f;
+                }
+            }
+            else
+            {
+                cout<<"Wrong command for BILL"<<endl;
+            }
+            
+        }
+        else
+        {
+            cout<<"Wrong input !"<<endl;
+        }
+    }
+    else if(b==4)
+    {
+        cout<<"Achar_Gosht = "<<Achar_Gosht<<" Rs subtracted from bill"<<endl;
+        d=d-Achar_Gosht;
+        cout<<"Do you want to add any other thing ? Press y or n"<<endl;
+        cin>>c;
+        if(c=='y')
+        {
+            goto t;
+        }
+        else if(c=='n')
+        {
+            cout<<"Type BILL if you want to see bill"<<endl;
+            cin>>bill;
+            if(bill=="BILL")
+            {
+                if(d<0)
+                {
+                    cout<<"Your current bill is: "<<0<<endl;
+                }
+                else
+                {
+                    cout<<"Your Items bill is: "<<d<<endl;
+                    f = (d*4)/100;
+                    cout<<"4 percent GST: "<<f<<endl;
+                    cout<<"Total BILL including GST: "<<d+f;
+                }
+            }
+            else
+            {
+                cout<<"Wrong command for BILL"<<endl;
+            }
+            
+        }
+        else
+        {
+            cout<<"Wrong input !"<<endl;
+        }
+    }
+    else if(b==5)
+    {
+        cout<<"Roti = "<<Roti<<" Rs subtracted from bill"<<endl;
+        d=d-Roti;
+        cout<<"Do you want to add any other thing ? Press y or n"<<endl;
+        cin>>c;
+        if(c=='y')
+        {
+            goto t;
+        }
+        else if(c=='n')
+        {
+            cout<<"Type BILL if you want to see bill"<<endl;
+            cin>>bill;
+            if(bill=="BILL")
+            {
+                if(d<0)
+                {
+                    cout<<"Your current bill is: "<<0<<endl;
+                }
+                else
+                {
+                    cout<<"Your Items bill is: "<<d<<endl;
+                    f = (d*4)/100;
+                    cout<<"4 percent GST: "<<f<<endl;
+                    cout<<"Total BILL including GST: "<<d+f;
+                }
+            }
+            else
+            {
+                cout<<"Wrong command for BILL"<<endl;
+            }
+            
+        }
+        else
+        {
+            cout<<"Wrong input !"<<endl;
+        }
+    }
+    else if(b==6)
+    {
+        cout<<"Drink = "<<Drink<<" Rs subtracted from bill"<<endl;
+        d=d-Drink;
+        cout<<"Do you want to add any other thing ? Press y or n"<<endl;
+        cin>>c;
+        if(c=='y')
+        {
+            goto t;
+        }
+        else if(c=='n')
+        {
+            cout<<"Type BILL if you want to see bill"<<endl;
+            cin>>bill;
+            if(bill=="BILL")
+            {
+                if(d<0)
+                {
+                    cout<<"Your current bill is: "<<0<<endl;
+                }
+                else
+                {
+                    cout<<"Your Items bill is: "<<d<<endl;
+                    f = (d*4)/100;
+                    cout<<"4 percent GST: "<<f<<endl;
+                    cout<<"Total BILL including GST: "<<d+f;
+                }
+            }
+            else
+            {
+                cout<<"Wrong command for BILL"<<endl;
+            }
+            
+        }
+        else
+        {
+            cout<<"Wrong input !"<<endl;
+        }
+    }
+    else
+    {
+        cout<<"Wrong input"<<endl;
+    }
+}
+void Friday()
+{
+    int Biryani = 140;
+    int Chicken = 50;
+    int Pasta = 90;
+    int b;
+    int d = 0;
+    char c;
+    string bill;
+    float f;
+    u:
+    cout<<"Menu of Friday"<<endl;
+    cout<<"Biryani: "<<Biryani<<" Rs"<<endl;
+    cout<<"Chicken: "<<Chicken<<" Rs"<<endl;
+    cout<<"Pasta: "<<Pasta<<" Rs"<<endl;
+    cout<<"Press 1 to buy 1st thing"<<endl;
+    cout<<"Press 2 to buy 2nd thing"<<endl;
+    cout<<"Press 3 to buy 3rd thing"<<endl;
+    cout<<"Press 4 to remove 1st thing"<<endl;
+    cout<<"Press 5 to remove 2nd thing"<<endl;
+    cout<<"Press 6 to remove 3rd thing"<<endl;
+    cin>>b;
+    cin>>b;
+    if(b==1)
+    {
+        cout<<"Biryani = "<<Biryani<<" Rs added to bill"<<endl;
+        d=d+Biryani;
+        cout<<"Do you want to add any other thing ? Press y or n"<<endl;
+        cin>>c;
+        if(c=='y')
+        {
+            goto u;
+        }
+        else if(c=='n')
+        {
+            cout<<"Type BILL if you want to see bill"<<endl;
+            cin>>bill;
+            if(bill=="BILL")
+            {
+                if(d<0)
+                {
+                    cout<<"Your current bill is: "<<0<<endl;
+                }
+                else
+                {
+                    cout<<"Your Items bill is: "<<d<<endl;
+                    f = (d*4)/100;
+                    cout<<"4 percent GST: "<<f<<endl;
+                    cout<<"Total BILL including GST: "<<d+f;
+                }
+            }
+            else
+            {
+                cout<<"Wrong command for BILL"<<endl;
+            }
+            
+        }
+        else
+        {
+            cout<<"Wrong input !"<<endl;
+        }
+    }
+    else if(b==2)
+    {
+        cout<<"Chicken = "<<Chicken<<" Rs added to bill"<<endl;
+        d=d+Chicken;
+        cout<<"Do you want to add any other thing ? Press y or n"<<endl;
+        cin>>c;
+        if(c=='y')
+        {
+            goto u;
+        }
+        else if(c=='n')
+        {
+            cout<<"Type BILL if you want to see bill"<<endl;
+            cin>>bill;
+            if(bill=="BILL")
+            {
+                if(d<0)
+                {
+                    cout<<"Your current bill is: "<<0<<endl;
+                }
+                else
+                {
+                    cout<<"Your Items bill is: "<<d<<endl;
+                    f = (d*4)/100;
+                    cout<<"4 percent GST: "<<f<<endl;
+                    cout<<"Total BILL including GST: "<<d+f;
+                }
+            }
+            else
+            {
+                cout<<"Wrong command for BILL"<<endl;
+            }
+            
+        }
+        else
+        {
+            cout<<"Wrong input !"<<endl;
+        }
+    }
+    else if(b==3)
+    {
+        cout<<"Pasta = "<<Pasta<<" Rs added to bill"<<endl;
+        d=d+Pasta;
+        cout<<"Do you want to add any other thing ? Press y or n"<<endl;
+        cin>>c;
+        if(c=='y')
+        {
+            goto u;
+        }
+        else if(c=='n')
+        {
+            cout<<"Type BILL if you want to see bill"<<endl;
+            cin>>bill;
+            if(bill=="BILL")
+            {
+                if(d<0)
+                {
+                    cout<<"Your current bill is: "<<0<<endl;
+                }
+                else
+                {
+                    cout<<"Your Items bill is: "<<d<<endl;
+                    f = (d*4)/100;
+                    cout<<"4 percent GST: "<<f<<endl;
+                    cout<<"Total BILL including GST: "<<d+f;
+                }
+            }
+            else
+            {
+                cout<<"Wrong command for BILL"<<endl;
+            }
+            
+        }
+        else
+        {
+            cout<<"Wrong input !"<<endl;
+        }
+    }
+    else if(b==4)
+    {
+        cout<<"Biryani = "<<Biryani<<" Rs subtracted from bill"<<endl;
+        d=d-Biryani;
+        cout<<"Do you want to add any other thing ? Press y or n"<<endl;
+        cin>>c;
+        if(c=='y')
+        {
+            goto u;
+        }
+        else if(c=='n')
+        {
+            cout<<"Type BILL if you want to see bill"<<endl;
+            cin>>bill;
+            if(bill=="BILL")
+            {
+               if(d<0)
+                {
+                    cout<<"Your current bill is: "<<0<<endl;
+                }
+                else
+                {
+                    cout<<"Your Items bill is: "<<d<<endl;
+                    f = (d*4)/100;
+                    cout<<"4 percent GST: "<<f<<endl;
+                    cout<<"Total BILL including GST: "<<d+f;
+                }
+            }
+            else
+            {
+                cout<<"Wrong command for BILL"<<endl;
+            }
+            
+        }
+        else
+        {
+            cout<<"Wrong input !"<<endl;
+        }
+    }
+    else if(b==5)
+    {
+        cout<<"Chicken = "<<Chicken<<" Rs subtracted from bill"<<endl;
+        d=d-Chicken;
+        cout<<"Do you want to add any other thing ? Press y or n"<<endl;
+        cin>>c;
+        if(c=='y')
+        {
+            goto u;
+        }
+        else if(c=='n')
+        {
+            cout<<"Type BILL if you want to see bill"<<endl;
+            cin>>bill;
+            if(bill=="BILL")
+            {
+               if(d<0)
+                {
+                    cout<<"Your current bill is: "<<0<<endl;
+                }
+                else
+                {
+                    cout<<"Your Items bill is: "<<d<<endl;
+                    f = (d*4)/100;
+                    cout<<"4 percent GST: "<<f<<endl;
+                    cout<<"Total BILL including GST: "<<d+f;
+                }
+            }
+            else
+            {
+                cout<<"Wrong command for BILL"<<endl;
+            }
+            
+        }
+        else
+        {
+            cout<<"Wrong input !"<<endl;
+        }
+    }
+    else if(b==6)
+    {
+        cout<<"Pasta = "<<Pasta<<" Rs subtracted from bill"<<endl;
+        d=d-Pasta;
+        cout<<"Do you want to add any other thing ? Press y or n"<<endl;
+        cin>>c;
+        if(c=='y')
+        {
+            goto u;
+        }
+        else if(c=='n')
+        {
+            cout<<"Type BILL if you want to see bill"<<endl;
+            cin>>bill;
+            if(bill=="BILL")
+            {
+                if(d<0)
+                {
+                    cout<<"Your current bill is: "<<0<<endl;
+                }
+                else
+                {
+                    cout<<"Your Items bill is: "<<d<<endl;
+                    f = (d*4)/100;
+                    cout<<"4 percent GST: "<<f<<endl;
+                    cout<<"Total BILL including GST: "<<d+f;
+                }
+            }
+            else
+            {
+                cout<<"Wrong command for BILL"<<endl;
+            }
+            
+        }
+        else
+        {
+            cout<<"Wrong input !"<<endl;
+        }
+    }
+    else
+    {
+        cout<<"Wrong input"<<endl;
+    }
+}
+int main()
+{
+    string a;
+    Day_Select();
+    cin>>a;
+    if(a=="monday")
+    {
+        Monday();
+    }
+    else if(a=="tuesday")
+    {
+        Tuesday();
+    }
+    else if(a=="wednesday")
+    {
+        Wednesday();
+    }
+    else if(a=="thursday")
+    {
+        Thursday();
+    }
+    else if(a=="friday")
+    {
+        Friday();
+    }
+    else
+    {
+        cout<<"Incorrect spelling, please make sure all alphabets are small"<<endl;
+    }
+}
